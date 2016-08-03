@@ -6,11 +6,13 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 
 var routes = require('./routes/index');
+var settings = require('./settings');
 var users = require('./routes/users');
 
 var app = express();
 
 // view engine setup
+//This tells the app where to find its views, what engine to use to render those views(ejs)
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 
