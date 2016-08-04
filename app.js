@@ -27,13 +27,16 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use(session({
+    resave:false,//添加这行
+    saveUninitialized: true,//添加这行
     secret: settings.cookieSecret,
     key: settings.db, //cookie name
     cookie: {maxAge: 1000 * 60 * 60 * 24 * 30}, //cookie life 30 days
     store: new MongoStore({
-        db: settings.db,
+        /*db: settings.db,
         host: settings.host,
-        port: settings.port
+        port: settings.port*/
+        url: 'mongodb://localhost/blog'
     })
 }));
 
