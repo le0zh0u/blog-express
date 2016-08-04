@@ -8,8 +8,6 @@ But when I copy from the book, I still get stuck. So I write it down and put the
 
 ---
 
----
-
 ## Use MongoDB
 
 ### What is MongoDB
@@ -29,8 +27,6 @@ After install it, run MongoDB and use:
     mongod --dbpath blogPath/data/
 
 In the Blog project, make directory named data where the blog data would put in. and set data folder path into .gitigore file.
-
----
 
 ---
 
@@ -75,8 +71,6 @@ And luckily, it works.
 
 ---
 
----
-
 ## Use ejs
 
 ### What is ejs
@@ -89,6 +83,5 @@ Search Google.
 
 ---
 
----
 
 
