@@ -83,5 +83,21 @@ Search Google.
 
 ---
 
+### Use supervisor
 
+Once I modify codes, I must to stop server and restart it. And `supervisor` module can fix this auto, when I save some codes, it will automatically restart application.
+ 
+    npm install -g supervisor
+    
+    supervisor app
+    
+use `supervisor` to start app.js.
+
+---
+
+### Use flash
+
+#### What is flash
+
+#### How to use
 
