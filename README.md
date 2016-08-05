@@ -101,3 +101,34 @@ use `supervisor` to start app.js.
 
 #### How to use
 
+---
+
+### Some Error
+
+#### Error: Module version mismatch. Expected 48, got 44.
+
+Detail:
+    
+    Error: Module version mismatch. Expected 48, got 44.
+        at Error (native)
+        at Object.Module._extensions..node (module.js:568:18)
+        at Module.load (module.js:458:32)
+        at tryModuleLoad (module.js:417:12)
+        at Function.Module._load (module.js:409:3)
+        at Module.require (module.js:468:17)
+        at require (internal/module.js:20:19)
+        at Object.<anonymous> (XXX/blog-express/node_modules/.npminstall/bson/0.2.22/bson/ext/index.js:15:10)
+        at Module._compile (module.js:541:32)
+        at Object.Module._extensions..js (module.js:550:10)
+        at Module.load (module.js:458:32)
+        at tryModuleLoad (module.js:417:12)
+        at Function.Module._load (module.js:409:3)
+        at Module.require (module.js:468:17)
+        at require (internal/module.js:20:19)
+        at Object.<anonymous> (XXX/blog-express/node_modules/.npminstall/bson/0.2.22/bson/lib/bson/index.js:3:24)
+    js-bson: Failed to load c++ bson extension, using pure JS version
+
+I think maybe because of bson, so I remove bson and reinstall it, it doesn't work.
+
+I remember that bson is one dependency for mongodb, so I reinstall mongodb, it works. 
+    
